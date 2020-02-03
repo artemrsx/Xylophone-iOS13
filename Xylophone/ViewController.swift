@@ -10,10 +10,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func keyPressed(_ sender: UIButton) {
-        playSound(forResource: "C");
-    }
-    @IBAction func keyPressedD(_ sender: UIButton) {
-        playSound(forResource: "D");
+        let title = sender.currentTitle!;
+        playSound(forResource: title);
     }
     
     func playSound(forResource: String) {
